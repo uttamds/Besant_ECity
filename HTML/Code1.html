@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex HTML Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: #e3d8d8;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      section {
+        padding: 20px;
+      }
+      article {
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      li {
+        list-style-type: none;
+      }
+      li a,
+      li a:visited {
+        text-decoration: none;
+        color: #333;
+      }
+
+      li a:hover,
+      li a:focus {
+        background: #716f6f;
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header >
+      <figure>
+       
+        <a href="https://www.icicibank.com">
+      <img  
+        style="width: 100px; border-radius:20px"
+        src="data:image/png;base64,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"
+        alt="icici logo"
+      />
+    </a>
+      <figcaption>www.icicibank.com</figcaption>
+    </figure>
+      <h1>ICICI Bank</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section >
+      <article>
+        <h2>Introduction</h2>
+        <p>
+          This is a complex HTML example demonstrating different sections of a
+          web page.
+        </p>
+      </article>
+
+      <article>
+        <h2>Main Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus
+          nec velit aliquet gravida. Nullam vehicula magna quis nulla vehicula,
+          vel fermentum tortor fringilla.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 ICICI Bank Limited All Rights Reseved</p>
+    </footer>
+  </body>
+</html>
