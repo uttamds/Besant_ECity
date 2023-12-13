@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css */
+
+      body {
+        background-color: bisque;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin-left: 100px;
+      }
+
+      li {
+        list-style-type: none;
+      }
+      input{
+        margin-bottom: 15px;
+        margin-left: 200px;
+      }
+      textarea{
+        margin-bottom: 15px;
+        margin-left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        facere architecto suscipit placeat, in harum magni omnis vitae
+        perspiciatis, maiores nisi dolorem necessitatibus! Aliquam accusamus
+        ipsam error, amet inventore fuga.
+      </p>
+    </header>
+    <main>
+      <article style="text-align: center">
+        <div>
+          <h1 style="color: brown">
+            Electornic City Companies Database
+            <span style="color: blue">(updated) <button>Refresh</button></span>
+          </h1>
+          <select name="" id="">
+            <option value="itcos">IT Cos</option>
+            <option value="auditors">Auditors</option>
+            <option value="canteen">Canteens</option>
+          </select>
+        </div>
+      </article>
+      <article>
+        <form action="test.html">
+          <fieldset>
+            <legend>New Company Data Entry</legend>
+            <label for="">Company Name: </label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /> <br>
+            <label for="">Company Type: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /> <br>
+            <label for="">Company Location: </label> <textarea name="" id="" cols="30" rows="10"></textarea>  <br>
+            <label for="">MNC Co: </label> <input type="checkbox">  <br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+        <details>
+            <summary>Check here for govt. guidelines</summary>
+            <ul>
+                <li>Tax</li>
+                <li>GST</li>
+                <li>Secuity</li>
+            </ul>
+        </details>
+      </article>
+    </main>
+  </body>
+</html>
