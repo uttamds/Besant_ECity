@@ -1,0 +1,248 @@
+Spinner
+-------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #3498db;
+        border-radius: 50%;
+        border-top: 5px solid #fff;
+        animation: spin 1s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The @keyframes Rule</h1>
+
+    <div class="spinner"></div>
+  </body>
+</html>
+
+
+
+Animation Example:
+-----------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+*{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s 2;
+}
+
+.mynextdiv{
+    width: 200px;
+  height: 200px;
+  background: red;
+  position: relative;
+  animation: mymove1 5s 2;
+}
+
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue; color:white;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+@keyframes mymove1 {
+  0%   {top: 0px; left: 0px; background: rgb(221, 192, 192);}
+  25%  {top: 0px; left: 100px; background: blue; color:white;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+</style>
+</head>
+<body>
+<h1>The @keyframes Rule</h1>
+<div>Uttam Shreyakar</div>
+<div class="mynextdiv">Uttam Shreyakar</div>
+</body>
+</html>
+
+
+Example
+---------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+    body{
+        background-color: cornsilk;
+    }
+ @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .fade-in-element {
+    animation: fadeIn 5s ease-out;
+    background-color:greenyellow;
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  .fade-in-element1 {
+    animation: fadeIn 5s ease-out;
+    background-color:rgba(0, 0, 255, 0.69);
+    color: yellow;
+   
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  
+  @keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.slide-in-element {
+  animation: slideIn 4s ease-out;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>The @keyframes Rule</h1>
+
+<div class="fade-in-element">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, at corrupti, quod repellendus aut reprehenderit consequatur vel explicabo omnis facere amet hic et quis maxime porro asperiores qui adipisci ipsum!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, expedita autem! Architecto, doloribus id. Quasi quia assumenda magnam? Aliquid repudiandae minus rerum facere ipsam perferendis voluptatum ipsa iusto suscipit eveniet?</p>
+</div>
+<div class="fade-in-element1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, at corrupti, quod repellendus aut reprehenderit consequatur vel explicabo omnis facere amet hic et quis maxime porro asperiores qui adipisci ipsum!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, expedita autem! Architecto, doloribus id. Quasi quia assumenda magnam? Aliquid repudiandae minus rerum facere ipsam perferendis voluptatum ipsa iusto suscipit eveniet?</p>
+</div>
+
+
+<div class="slide-in-element">
+    <button>This is a sample button</button>
+</div>
+</body>
+</html>
+
+List HTML   (See below for CSS separate )
+---------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Destinations</h2>
+      <ul>
+        <li><a href="#">Mumbai</a></li>
+        <li><a href="#">Hyderabad</a></li>
+        <li><a href="#">Chennai</a></li>
+        <li><a href="#">Bangalore</a></li>
+        <li><a href="#">Kochi</a></li>
+        <li><a href="#">Delhi</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+
+CSS
+----
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0.5rem;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+}
+
+nav{
+    border : 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 3rem;
+    line-height: 7rem;
+}
+
+h2 { 
+    padding : 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0 ;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+li{
+   border-top: 3px solid greenyellow;
+}
+
+li a {
+    display: block;
+    /* The display: block makes the backgroud color change affect the entire space held by the li item */
+
+}
+
+li a,
+li a:visited { 
+    text-decoration:  none;
+    color: #333;
+}
+
+li a:hover, 
+li a:focus { 
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer; 
+}
+
+li:last-child a { 
+     border-radius: 0 0 2rem 2rem;
+}
+ 
+
+
+======================================
+
+
+
+
